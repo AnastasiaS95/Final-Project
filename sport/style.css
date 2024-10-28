@@ -1,0 +1,134 @@
+/* Общие стили */
+body,html {
+    background-image: url(fff7919912a661a4ba277c4cc440f765istock-1135188049.jpg);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.sport {
+    display: grid; /* Используем сетку для расположения колонок */
+    grid-template-columns: repeat(3, 1fr); /* Три колонки равной ширины */
+    gap: 20px; /* Промежуток между колонками */
+    background-image: url(fff7919912a661a4ba277c4cc440f765istock-1135188049.jpg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sport-section {
+    color: white;
+    background-color: #e7e7e7; /* Цвет фона для колонок */
+    border-radius: 5px;
+    padding: 15px;
+}
+
+ul {
+    color: black;
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем маргин */
+}
+
+li {
+    margin-bottom: 10px; /* Отступы между пунктами меню */
+}
+
+
+/*Бургер-меню активное состояние*/
+.menu.active {
+    display: block;
+}
+
+.burger-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.burger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-icon span {
+    width: 30px;
+    height: 4px;
+    background-color:black;
+    transition: all 0.3s ease;
+}
+
+/*Скрываем меню по умолчанию */
+.menu {
+display: none;
+position: absolute;
+top: 50px;
+left: 10px;
+background-color:white;
+padding: 20px;
+border-radius: 10px;
+list-style: none;
+margin: 10px 0; 
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Анимация для открытия меню */
+.menu.open {
+    display: block;
+    background-image: url(background-image.jpg);
+    
+}
+
+.sport-section {
+    background-image: url('background-image1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+/* Темный фильтр для улучшения видимости текста*/
+.sport-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.sport-message {
+    color: beige;
+    text-align: center;
+    z-index: 2; 
+}
+
+.sport-message h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sport-message p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
